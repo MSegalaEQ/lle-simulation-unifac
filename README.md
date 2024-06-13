@@ -30,7 +30,7 @@ The system of equations has 12 variables and 3 equations, therefore cannot be so
 1. Start by guessing any of the solvent molar fractions in one exclusive phase, preferably stting it to 0.99, so that the others will be near zero. For instance, $x_A^{(1)}$ = 0.99;
 2. Calculate activity coefficients;
 3. Solve the system of equations for all the molar fractions but the one guessed and store results;
-4. Increment the other solvent by a given quantity $s$ and repeat these steps until `x_B^{(1)} = 0.99`.
+4. Increment the other solvent by a given quantity $s$ and repeat these steps until $x_B^{(1)}$ = 0.99.
 
 By calculating activity coefficients before solving the system of equations, step 3 can be carried out by calculating the inverted matrix of linear coefficients, as [it is a pseudo-linear system of equations](https://www.sciencedirect.com/science/article/pii/S0098135412003729).
 
