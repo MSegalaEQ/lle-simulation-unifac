@@ -11,9 +11,9 @@ Solvent extraction process consist in adding a secondary component, known as the
 Thermodynamic equilibrium simulation is grounded in the chemical equilibrium of species in multiple physical states. Chemical equilibrium can be interpretated similarly to other types of equilibrium, such as mechanical and thermal equilibrium. To illustrate this, imagine two blocks with the same mass, each hanging on the end of a rope, with the rope placed over a pulley. Naturally, if no other external force is applied, these blocks will remain still in the their positions - this is mechanical equilibrium. Two bodies in contact with different temperatures will reach the same temperature given sufficient time - this is thermal equilibrium. This is very simple to understand that mechanical systems have momentum as their measurement unit, just as thermal system have temperature. In the other hand, however, it may not be trivial for chemical systems.
 
 The driving force of chemicals is widely known as chemical potential, but it has little or no practical use due to multiple undesired proprieties. For chemical systems, there is a wide variety of measurements depending on the process. All these measurements are linked to Gibbs free energy. For liquid phases, activity coefficient and Gibbs free energy in excess are the metrics involved and the equilibrium of three species is achieved when:
-1. $$\gamma_A^{(1)} x_A^{(1)} = \gamma_A^{(2)} x_A^{(2)}$$
-2. $$\gamma_B^{(1)} x_B^{(1)} = \gamma_B^{(2)} x_B^{(2)}$$
-3. $$\gamma_C^{(1)} x_C^{(1)} = \gamma_C^{(2)} x_C^{(2)}$$
+$$\gamma_A^{(1)} x_A^{(1)} = \gamma_A^{(2)} x_A^{(2)}$$
+$$\gamma_B^{(1)} x_B^{(1)} = \gamma_B^{(2)} x_B^{(2)}$$
+$$\gamma_C^{(1)} x_C^{(1)} = \gamma_C^{(2)} x_C^{(2)}$$
 
 As:
 - $x_i^{(1)}$: mole fraction of species $i$ in Phase 1.
@@ -27,10 +27,10 @@ The role of molecular models in these calculations is to integrate molecular par
 
 The system of equations has 12 variables and 3 equations, therefore cannot be solved immediately. First, there are two additional equations not mentioned before, one for each phase: the sum of species' molar fractions (composition on a molar basis) must be equal 1. Molelucar model will estimate all activity coefficients, however, it can only estimate these values once the molar fractions are known, and these are also unknown variables. With 5 equations and 6 implicit variables, an iterative process is required to solve this problem:
 
-1. Start by guessing any of the solvent molar fractions in one exclusive phase, preferably stting it to 0.99, so that the others will be near zero. For instance, $x_A^{(1)=0.99$;
+1. Start by guessing any of the solvent molar fractions in one exclusive phase, preferably stting it to 0.99, so that the others will be near zero. For instance, $x_A^{(1) = 0.99$;
 2. Calculate activity coefficients;
 3. Solve the system of equations for all the molar fractions but the one guessed and store results;
-4. Increment the other solvent by a given quantity $s$ and repeat these steps until $x_B^{(1)=0.99$.
+4. Increment the other solvent by a given quantity $s$ and repeat these steps until $x_B^{(1) = 0.99$.
 
 By calculating activity coefficients before solving the system of equations, step 3 can be carried out by calculating the inverted matrix of linear coefficients, as [it is a pseudo-linear system of equations](https://www.sciencedirect.com/science/article/pii/S0098135412003729).
 
