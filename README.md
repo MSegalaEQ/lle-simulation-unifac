@@ -27,10 +27,10 @@ The role of molecular models in these calculations is to integrate molecular par
 
 The system of equations has 12 variables and 3 equations, therefore cannot be solved immediately. First, there are two additional equations not mentioned before, one for each phase: the sum of species' molar fractions (composition on a molar basis) must be equal 1. Molelucar model will estimate all activity coefficients, however, it can only estimate these values once the molar fractions are known, and these are also unknown variables. With 5 equations and 6 implicit variables, an iterative process is required to solve this problem:
 
-1. Start by guessing any of the solvent molar fractions in one exclusive phase, preferably stting it to 0.99, so that the others will be near zero. For instance, $x_A^{(1) = 0.99$;
+1. Start by guessing any of the solvent molar fractions in one exclusive phase, preferably stting it to 0.99, so that the others will be near zero. For instance, $$x_A^{(1)} = 0.99$$;
 2. Calculate activity coefficients;
 3. Solve the system of equations for all the molar fractions but the one guessed and store results;
-4. Increment the other solvent by a given quantity $s$ and repeat these steps until $x_B^{(1) = 0.99$.
+4. Increment the other solvent by a given quantity $s$ and repeat these steps until $$x_B^{(1)} = 0.99$$.
 
 By calculating activity coefficients before solving the system of equations, step 3 can be carried out by calculating the inverted matrix of linear coefficients, as [it is a pseudo-linear system of equations](https://www.sciencedirect.com/science/article/pii/S0098135412003729).
 
