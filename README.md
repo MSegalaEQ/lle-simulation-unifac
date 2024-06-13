@@ -36,6 +36,6 @@ By calculating activity coefficients before solving the system of equations, ste
 
 ## Excel Spreadsheet
 
-This repository presents an [Excel spreadsheet](UNIFAC LLE.xlsm) containing all the necessary resources to simulate any ternary dual liquid phase system. Visual Basic was used for the implementation of the calculation algorithm, along with scripted buttons. Instructions are provided in the first sheet.
+This repository presents an [Excel spreadsheet](https://github.com/MSegalaEQ/lle-simulation-unifac/blob/main/UNIFAC%20LLE.xlsm) containing all the necessary resources to simulate any ternary dual liquid phase system. Visual Basic was used for the implementation of the calculation algorithm, along with scripted buttons. Instructions are provided in the first sheet.
 
 Some observations: mixtures that do not separate into multiple phases may return errors during calculations. For some systems, different starting concentrations may be required, and reordering species may solve this problem without editing the programmed script. As a prototype version, this spreadsheet may produce other types of error not yet debugged.
