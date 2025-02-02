@@ -1,8 +1,8 @@
-# What are non-miscible mixtures? Liquid-Liquid Equilibria Simulation with UNIFAC Model
+# What are immiscible liquids? Liquid-Liquid Equilibria Simulation with UNIFAC Model
 
 ## Intro
 
-A non-miscible (or immiscible) liquid mixture is when two liquids don’t mix together but instead stay separate, like oil and water. When oil is poured into a glass of water, it floats on top instead of blending in, resulting in two layers of liquids, often called distinct liquid phases. Some everyday examples of immiscible liquids include salad dressing (oil and vinegar) or gasoline and water.
+An immiscible (or non-miscible) liquid mixture is when two liquids do not mix together but instead stay separate, like oil and water. When oil is poured into a glass of water, it floats on top instead of blending in, resulting in two layers of liquids, often called distinct liquid phases. Some everyday examples of immiscible liquids include salad dressing (oil and vinegar) or gasoline and water.
 
 However, no two liquids are completely immiscible. In reality, each phase of the mixture contains a tiny amount of the other liquid phase component. For example, even though oil and water form separate phases, a very small amount of water dissolves into the oil, and a tiny bit of oil dissolves into the water. This happens because molecules interact at a microscopic level, even if they don’t mix visibly.
 
